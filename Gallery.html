@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style> 
+      html {
+          background: url(Images/Bg.jpeg) no-repeat center fixed; 
+          background-size: cover;  
+      }
+      h1 {
+         font-size: 100px; font-family: "Sofia", sans-serif;
+       }
+
+      h2 {
+         font-size: 70px;
+         text-shadow: 3px 3px 3px #000000;
+       }
+
+       div.gallery {
+margin: 5px;
+border: 2px solid rgb(0, 0, 0);
+float: left;
+width: 180px;
+}
+
+div.gallery:hover {
+border: 2px solid rgb(0, 0, 0);
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+  </style>
+
+<table width="100%">
+  <tr>
+    <th>
+      <img src="Images/Taj.png" alt="Taj Mahal" style="width:80px;height:80px;"> </th>
+    <th><a href="Home Page.html" target="main">Home</a></th>
+    <th><a href="About Us.html"target="main">About us</th>
+    <th><a href="Gallery.html"target="main">Gallery</th>
+      <th><a href="Contact Us.html"target="main">Contact Us</a></th>
+  </tr>
+</table>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</head>
+<body>
+    
+
+    <h1 class="font-effect-shadow-multiple" style="text-align:center;">Welcome to Taj Mahal</h1>
+
+    <h2 style="text-align:center; color:rgb(143, 9, 9)">Gallery of <b>"The Taj Mahal"</b></h2>
+<center>
+    <p>
+      <button type="button" onclick="light(1)">Night</button>
+      <button type="button" onclick="light(0)">Day</button>
+      </p></center>
+    <script>
+      function light(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = "Images/187-Tour-Taj-Mahal.jpeg"
+        } else {
+          pic = "Images/taj-mahal-full-moonlight.jpeg"
+        }
+        document.getElementById('myImage').src = pic;
+      }
+      </script>
+      <center>
+      <img id="myImage" src="Images/187-Tour-Taj-Mahal.jpeg" width="1420" height="700">
+      </center>
+<div class="gallery">
+  <a target="_blank" href="Images/Taj Morn 2.jpeg">
+    <img src="Images/Taj Morn 2.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Taj Mahal, Agra, India</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/main building.jpeg">
+    <img src="Images/main building.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">The mausoleum (Rauza-i-munnauwara)</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/main gate.jpeg">
+    <img src="Images/main gate.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">The main gateway (darwaza) to the Taj Mahal</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/marinet.jpeg">
+    <img src="Images/marinet.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Taj Mahal minaret</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/sunrise.jpeg">
+    <img src="Images/sunrise.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Taj Mahal at sunrise from Main Entrance</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/view.jpeg">
+    <img src="Images/view.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Four minarets frame the tomb</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/interior.jpeg">
+    <img src="Images/interior.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Sketch of the interior view of the vaulted dome over the tombs of Shah Jahan (left) and Mumtaz Mahal (right)</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/tombs.jpeg">
+    <img src="Images/tombs.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">The actual tombs of Mumtaz Mahal (right) and Shah Jahan (left) in the lower level. Notice that Mumtaz's grave does not have a lower slab like that of Shah Jahan
+  </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/dome.jpeg">
+    <img src="Images/dome.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Main marble dome, smaller domes, and decorative spires that extend from the edges of the base walls</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/calligraphy.jpeg">
+    <img src="Images/calligraphy.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Arabic calligraphy at the tomb entrance</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/window view.jpeg">
+    <img src="Images/window view.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">A window view of Taj Mahal from Agra Fort</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Images/Taj Night 2.jpeg">
+    <img src="Images/Taj Night 2.jpeg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">Taj Mahal at night from Main Entrance</div>
+</div>
+</center>
+<br>
+<table style="width:100%">
+  <tr>
+    <th style="text-align: center;font-size: 20px;">Venue<br>Agra, Uttar Pradesh 282001, India.<br>Contact Us:<br>Tel.: +91 562 222 6431<br><br style="color:rgb(138, 8, 1)">Website Designed and Maintained by Samyuktha Srinivasan<br></th>
+  </tr>
+  </body>
+</html>
